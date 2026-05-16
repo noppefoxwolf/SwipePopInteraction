@@ -1,5 +1,7 @@
 # SwipePopInteraction
 
+> Deprecated on iOS 26 and later because UIKit supports swipe-back by default.
+
 ```swift
 import UIKit
 import SwipePopInteraction

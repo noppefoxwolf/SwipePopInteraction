@@ -1,11 +1,21 @@
 public import UIKit
 
 @MainActor
+@available(
+    iOS,
+    deprecated: 26.0,
+    message: "Use the default UIKit swipe-back interaction on iOS 26 and later."
+)
 public protocol SwipePopInteractionDelegate: AnyObject {
     func navigationController(for interaction: SwipePopInteraction) -> UINavigationController
 }
 
 @MainActor
+@available(
+    iOS,
+    deprecated: 26.0,
+    message: "Use the default UIKit swipe-back interaction on iOS 26 and later."
+)
 public final class SwipePopInteraction: NSObject, UIInteraction {
     let panGestureRecognizer = UIPanGestureRecognizer()
     let transitionController = PopNavigationTransitionController()
